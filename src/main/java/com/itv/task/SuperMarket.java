@@ -22,7 +22,7 @@ public class SuperMarket {
 
     Bill bill = checkoutService.checkout(basket);
 
-    BillPresenter billPresenter = BillPresenterProvider.get(InputOutputType.CSV);
+    BillPresenter billPresenter = BillPresenterProvider.get(InputOutputType.CONSOLE);
 
     billPresenter.present(bill);
   }
