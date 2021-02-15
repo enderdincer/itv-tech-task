@@ -30,14 +30,14 @@ public final class ShoppingServiceProvider {
 
   private static CsvShoppingService getCsvShopping() {
     if (Objects.isNull(csvShoppingService)) {
-      return new CsvShoppingService();
+      csvShoppingService = new CsvShoppingService();
     }
     return csvShoppingService;
   }
 
   private static ConsoleShoppingService getConsoleShoppingService() {
     if (Objects.isNull(consoleShoppingService)) {
-      return new ConsoleShoppingService();
+      consoleShoppingService = new ConsoleShoppingService();
     }
     return consoleShoppingService;
   }

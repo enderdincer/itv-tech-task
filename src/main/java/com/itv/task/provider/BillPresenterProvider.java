@@ -31,14 +31,14 @@ public final class BillPresenterProvider {
 
   private static CsvBillPresenter getCsvBillPresenter() {
     if (Objects.isNull(csvBillPresenter)) {
-      return new CsvBillPresenter();
+      csvBillPresenter = new CsvBillPresenter();
     }
     return csvBillPresenter;
   }
 
   private static ConsoleBillPresenter getConsoleBillPresenter() {
     if (Objects.isNull(consoleBillPresenter)) {
-      return new ConsoleBillPresenter();
+      consoleBillPresenter = new ConsoleBillPresenter();
     }
     return consoleBillPresenter;
   }
